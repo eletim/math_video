@@ -22,4 +22,13 @@ pip install -U pip wheel setuptools
 pip install manim
 ```
 
-manim -pql math_anim.py SolveByFactoring
+
+# play
+
+```sh
+python -m manim -pql math_anim.py SolveByFactoring    # 低画質プレビュー
+# 高画質
+python -m manim -pqh math_anim.py SolveByFactoring
+# GIF が欲しい場合
+python -m manim -pqh --format=gif math_anim.py SolveByFactoring
+```
